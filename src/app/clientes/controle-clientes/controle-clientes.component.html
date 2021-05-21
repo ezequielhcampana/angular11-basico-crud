@@ -1,0 +1,53 @@
+<mat-card class="card-titulo">
+    <h2>
+        Cadastro de Cliente
+    </h2>
+</mat-card>
+<br />
+<mat-card class="card-barra-botoes">
+    <form [formGroup]="formCliente" (ngSubmit)="submit()">
+        <div class="bloco-wrapper">
+            <div class="bloco-campos">
+                <mat-form-field class="full-width">
+                    <mat-label>Cliente</mat-label>
+                    <input formControlName="cliente" matInput [(ngModel)]="cliente.cliente"  
+                           placeholder="Informe o nome do cliente" />            
+                </mat-form-field>
+
+                <mat-form-field class="full-width">
+                    <mat-label>E-Mail</mat-label>
+                    <input formControlName="email" matInput [(ngModel)]="cliente.email" 
+                           placeholder="Informe o e-mail" />            
+                </mat-form-field>
+
+                <mat-form-field class="full-width">
+                    <mat-label>E-Mail Secundário</mat-label>
+                    <input formControlName="emailSecundario" matInput [(ngModel)]="cliente.emailSecundario" 
+                           placeholder="Informe o e-mail secundário" />            
+                </mat-form-field>
+
+                <mat-form-field class="full-width">
+                    <mat-label>Celular</mat-label>
+                    <input formControlName="celular" matInput [(ngModel)]="cliente.celular" mask="(00)00000-0000"
+                           placeholder="Informe o nº de celular" />
+                </mat-form-field>
+
+                <div class="idFoto">
+                    <input type="file" id="file" (change)="selecionarFoto($event)" />
+                </div>                
+            </div>
+
+            <div class="bloco-foto">                
+                <div class="bloco-foto-imagem" *ngIf="cliente.foto">
+                    <img src="{{ pathFotos + cliente.foto }}" class="foto" />
+                </div>     
+                <div class="bloco-foto-imagem" *ngIf="!cliente.foto">
+                    <img src="../../../assets/imagens/0.jpg" class="foto" />
+                </div>            
+            </div>            
+        </div>
+        <br />
+        <button mat-raised-button color="warn" class="botoes" routerLink='/'>Voltar</button>
+        <button mat-raised-button color="{{ operacao=='excluir' ? 'warn' : 'primary' }}" class="botoes">{{ descrBotao }}</button>
+    </form>
+</mat-card>

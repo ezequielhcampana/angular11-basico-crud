@@ -1,0 +1,102 @@
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 60%;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.bloco-wrapper {
+    display: flex;
+    align-items: left;
+    justify-content: start;
+    width: 100%;
+    flex-direction: row;
+}
+
+.bloco-campos {
+    width: 80%;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.bloco-foto {
+    width: 20%;
+    margin-left: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+.bloco-foto-titulo {
+    width: 100%;
+    background-color: burlywood;
+    text-align: center;
+    font-weight: 500;
+}
+
+.bloco-foto-imagem {
+    background-color: #fff;
+    height: 85%;
+    text-align: center;
+    padding-top: 20px;    
+}
+
+.botoes {
+    margin-left: 30px;
+}
+
+.card-titulo {
+    width: 70%;
+    margin: auto;
+    background-color: #000000bb;
+    color: #fff;
+}
+
+.card-barra-botoes {
+    width: 70%;
+    margin: auto;
+}
+
+.card-tabela {
+    width: 70%;
+    margin: auto;
+}
+
+tr {
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+th {
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+td {
+    font-size: 0.9rem;
+    text-align: left;
+    height: 100px;
+}
+
+.foto {
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+}
+
+.idFoto {
+    margin-top: 15px;
+    display: flex;
+    justify-content: start;
+    width: 90%;
+    flex-direction: row;
+}

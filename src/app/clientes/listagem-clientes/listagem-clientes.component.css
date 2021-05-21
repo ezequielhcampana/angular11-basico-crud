@@ -1,0 +1,44 @@
+.full-width {
+  width: 100%;
+}
+
+.card-titulo {
+  width: 75%;
+  margin: auto;
+  background-color: #000000bb;
+  color: #fff;
+}
+
+.card-barra-botoes {
+  width: 75%;
+  margin: auto;
+}
+
+.card-tabela {
+  width: 75%;
+  margin: auto;
+}
+
+tr {
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+th {
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+td {
+  font-size: 0.9rem;
+  text-align: left;
+  height: 100px;
+}
+
+.foto {
+  border-radius: 50%;
+}
